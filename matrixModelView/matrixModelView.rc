@@ -1,0 +1,268 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (United States) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_FORMVIEW DIALOGEX 0, 0, 782, 192
+STYLE DS_SETFONT | DS_FIXEDSYS | WS_CHILD
+FONT 8, "MS Shell Dlg", 0, 0, 0x0
+BEGIN
+    GROUPBOX        "View (Camera)",IDC_STATIC,72,7,174,178
+    GROUPBOX        "    ModelView Matrix    ",IDC_STATIC,671,7,102,84,BS_CENTER
+    RTEXT           "1",IDC_M_MV_0,672,19,23,8
+    RTEXT           "0",IDC_M_MV_1,672,37,23,8
+    RTEXT           "0",IDC_M_MV_2,672,55,23,8
+    RTEXT           "0",IDC_M_MV_3,672,73,23,8
+    RTEXT           "0",IDC_M_MV_4,695,19,23,8
+    RTEXT           "1",IDC_M_MV_5,695,37,23,8
+    RTEXT           "0",IDC_M_MV_6,695,55,23,8
+    RTEXT           "0",IDC_M_MV_7,695,73,23,8
+    RTEXT           "0",IDC_M_MV_8,719,19,23,8
+    RTEXT           "0",IDC_M_MV_9,719,37,23,8
+    RTEXT           "1",IDC_M_MV_10,719,55,23,8
+    RTEXT           "0",IDC_M_MV_11,719,73,23,8
+    RTEXT           "0",IDC_M_MV_12,743,19,23,8
+    RTEXT           "0",IDC_M_MV_13,743,37,23,8
+    RTEXT           "0",IDC_M_MV_14,743,55,23,8
+    RTEXT           "1",IDC_M_MV_15,743,73,23,8
+    GROUPBOX        "        View Matrix         ",IDC_STATIC,430,7,102,84,BS_CENTER
+    CTEXT           "=",IDC_STATIC,658,44,8,8
+    CTEXT           "X",IDC_STATIC,538,45,8,8
+    GROUPBOX        "         Model Matrix         ",IDC_STATIC,552,7,102,84,BS_CENTER
+    RTEXT           "1",IDC_M_V_0,431,19,23,8
+    RTEXT           "0",IDC_M_V_1,431,37,23,8
+    RTEXT           "0",IDC_M_V_2,431,55,23,8
+    RTEXT           "0",IDC_M_V_3,431,73,23,8
+    RTEXT           "0",IDC_M_V_4,454,19,23,8
+    RTEXT           "1",IDC_M_V_5,454,37,23,8
+    RTEXT           "0",IDC_M_V_6,454,55,23,8
+    RTEXT           "0",IDC_M_V_7,454,73,23,8
+    RTEXT           "0",IDC_M_V_8,478,19,23,8
+    RTEXT           "0",IDC_M_V_9,478,37,23,8
+    RTEXT           "1",IDC_M_V_10,478,55,23,8
+    RTEXT           "0",IDC_M_V_11,478,73,23,8
+    RTEXT           "0",IDC_M_V_12,502,19,23,8
+    RTEXT           "0",IDC_M_V_13,502,37,23,8
+    RTEXT           "0",IDC_M_V_14,502,55,23,8
+    RTEXT           "1",IDC_M_V_15,502,73,23,8
+    RTEXT           "1",IDC_M_M_0,553,19,23,8
+    RTEXT           "0",IDC_M_M_1,553,37,23,8
+    RTEXT           "0",IDC_M_M_2,553,55,23,8
+    RTEXT           "0",IDC_M_M_3,553,73,23,8
+    RTEXT           "0",IDC_M_M_4,576,19,23,8
+    RTEXT           "1",IDC_M_M_5,576,37,23,8
+    RTEXT           "0",IDC_M_M_6,576,55,23,8
+    RTEXT           "0",IDC_M_M_7,576,73,23,8
+    RTEXT           "0",IDC_M_M_8,600,19,23,8
+    RTEXT           "0",IDC_M_M_9,600,37,23,8
+    RTEXT           "1",IDC_M_M_10,600,55,23,8
+    RTEXT           "0",IDC_M_M_11,600,73,23,8
+    RTEXT           "0",IDC_M_M_12,624,19,23,8
+    RTEXT           "0",IDC_M_M_13,624,37,23,8
+    RTEXT           "0",IDC_M_M_14,624,55,23,8
+    RTEXT           "1",IDC_M_M_15,624,73,23,8
+    CONTROL         "",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,562,87,81,8
+    CONTROL         "",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,442,87,78,8
+    CONTROL         "",IDC_STATIC,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,682,86,78,8
+    LTEXT           "Position",IDC_STATIC,82,40,26,8
+    RTEXT           "Heading (Y)",IDC_STATIC,78,100,42,8
+    RTEXT           "Pitch (X)",IDC_STATIC,84,82,36,8
+    PUSHBUTTON      "Reset View (Camera)",IDC_BUTTON_VIEW_RESET,109,171,90,14
+    LTEXT           "Position",IDC_STATIC,262,40,32,8
+    LTEXT           "Rotation",IDC_STATIC,262,100,28,8
+    RTEXT           "X",IDC_STATIC,289,22,12,8
+    RTEXT           "Y",IDC_STATIC,289,40,12,8
+    RTEXT           "Z",IDC_STATIC,289,58,12,8
+    RTEXT           "X",IDC_STATIC,289,82,12,8
+    RTEXT           "Y",IDC_STATIC,289,100,12,8
+    RTEXT           "Z",IDC_STATIC,289,118,12,8
+    PUSHBUTTON      "Reset Model",IDC_BUTTON_MODEL_RESET,295,171,89,14
+    RTEXT           "X",IDC_STATIC,108,22,12,8
+    RTEXT           "Y",IDC_STATIC,108,40,12,8
+    RTEXT           "Z",IDC_STATIC,108,58,12,8
+    RTEXT           "Roll (Z)",IDC_STATIC,78,118,42,8
+    CONTROL         "",IDC_SLIDER_VIEW_PX,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,120,18,102,15
+    CONTROL         "",IDC_SLIDER_VIEW_PY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,120,36,102,15
+    CONTROL         "",IDC_SLIDER_VIEW_PZ,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,120,54,102,15
+    CONTROL         "",IDC_SLIDER_VIEW_RX,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,120,78,102,15
+    CONTROL         "",IDC_SLIDER_VIEW_RY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,120,96,102,15
+    CONTROL         "",IDC_SLIDER_VIEW_RZ,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,120,114,102,15
+    LTEXT           "-10",IDC_LABEL_VIEW_PX,223,22,18,8
+    LTEXT           "-10",IDC_LABEL_VIEW_PY,223,40,18,8
+    LTEXT           "-10",IDC_LABEL_VIEW_PZ,223,58,18,8
+    LTEXT           "-180",IDC_LABEL_VIEW_RX,223,82,18,8
+    LTEXT           "-180",IDC_LABEL_VIEW_RY,223,100,18,8
+    LTEXT           "-180",IDC_LABEL_VIEW_RZ,223,118,18,8
+    CONTROL         "",IDC_SLIDER_MODEL_PX,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,301,18,101,15
+    CONTROL         "",IDC_SLIDER_MODEL_PY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,301,36,101,15
+    CONTROL         "",IDC_SLIDER_MODEL_PZ,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,301,54,101,15
+    CONTROL         "",IDC_SLIDER_MODEL_RX,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,301,78,101,15
+    CONTROL         "",IDC_SLIDER_MODEL_RY,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,301,96,101,15
+    CONTROL         "",IDC_SLIDER_MODEL_RZ,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,301,114,101,15
+    GROUPBOX        "Model",IDC_STATIC,252,7,174,178
+    LTEXT           "-10",IDC_LABEL_MODEL_PX,403,22,18,8
+    LTEXT           "-10",IDC_LABEL_MODEL_PY,403,40,19,8
+    LTEXT           "-10",IDC_LABEL_MODEL_PZ,403,58,19,8
+    LTEXT           "-180",IDC_LABEL_MODEL_RX,403,82,19,8
+    LTEXT           "-180",IDC_LABEL_MODEL_RY,403,100,19,8
+    LTEXT           "-180",IDC_LABEL_MODEL_RZ,403,118,19,8
+    CONTROL         "Static",IDC_LABEL_VIEW_GL,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,430,115,144,55,WS_EX_STATICEDGE
+    CONTROL         "Static",IDC_LABEL_MODEL_GL,"Static",SS_LEFTNOWORDWRAP | WS_GROUP,586,115,144,55,WS_EX_STATICEDGE
+    LTEXT           "OpenGL calls for Model Matrix\n(RotZ -> RotY -> RotX -> Translate)",IDC_STATIC,586,97,132,16
+    LTEXT           "OpenGL calls for View Matrix\n(Translate -> Pitch -> Heading -> Roll)",IDC_STATIC,430,97,132,16
+    PUSHBUTTON      "",IDC_BUTTON_ABOUT,750,161,30,24,BS_BITMAP
+    RADIOBUTTON     "Teapot",IDC_RADIO1,9,19,39,10,BS_PUSHLIKE | WS_GROUP
+    RADIOBUTTON     "Cube",IDC_RADIO2,9,30,33,10,BS_PUSHLIKE | WS_GROUP
+    RADIOBUTTON     "Torus",IDC_RADIO3,9,41,35,10,BS_PUSHLIKE | WS_GROUP
+    RADIOBUTTON     "Sphere",IDC_RADIO4,9,53,39,10,BS_PUSHLIKE | WS_GROUP
+    GROUPBOX        "Object",IDC_STATIC,7,7,51,94
+    CONTROL         "Rotation X",IDC_CHECK4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,264,139,50,10
+    CONTROL         "Rotation Y",IDC_CHECK5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,316,139,49,10
+    CONTROL         "Rotation Z",IDC_CHECK6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,371,140,49,10
+    RADIOBUTTON     "Cylinder",IDC_RADIO5,9,64,42,10,BS_PUSHLIKE | WS_GROUP
+    GROUPBOX        "Shape",IDC_STATIC,7,100,52,60,WS_GROUP
+    RADIOBUTTON     "Point",IDC_RADIO6,7,110,32,10,WS_GROUP | WS_TABSTOP
+    RADIOBUTTON     "Line",IDC_RADIO7,7,122,29,10,WS_GROUP | WS_TABSTOP
+    RADIOBUTTON     "Face",IDC_RADIO8,7,135,31,10,WS_GROUP | WS_TABSTOP
+    RADIOBUTTON     "Wheel",IDC_RADIO9,9,76,37,10,BS_PUSHLIKE | WS_GROUP
+    RADIOBUTTON     "Cone",IDC_RADIO10,9,88,33,10,BS_PUSHLIKE | WS_GROUP
+    RADIOBUTTON     "texture",IDC_RADIO11,7,146,38,10
+    RADIOBUTTON     "Fog",IDC_RADIO12,7,175,28,10
+    GROUPBOX        "Fog",IDC_STATIC,7,165,52,20
+END
+
+IDD_ABOUT DIALOGEX 0, 0, 256, 127
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION
+CAPTION "About"
+FONT 8, "MS Shell Dlg", 400, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDC_OK,199,106,50,14
+    CONTROL         IDB_BITMAP_SONGHO,IDC_STATIC,"Static",SS_BITMAP,173,38,56,50
+    CTEXT           "PROJECT CS105",IDC_STATIC,63,15,118,15
+    LTEXT           "EDITOR:\n\tPHAN HOANG PHUOC - 17520918\n\tTRAN CONG MINH - 17520763\n\tNguyen Huu Minh Khai - 17520605",IDC_STATIC,22,46,145,43
+    LTEXT           "LECTURER:\n\t Cap Pham Dinh Thang",IDC_STATIC,27,93,129,21
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_FORMVIEW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 780
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 185
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 249
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 120
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// AFX_DIALOG_LAYOUT
+//
+
+IDD_FORMVIEW AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+IDD_ABOUT AFX_DIALOG_LAYOUT
+BEGIN
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_UIT          BITMAP                  "uit.bmp"
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+32512                   ICON                    "Draw.ico"
+
+#endif    // English (United States) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

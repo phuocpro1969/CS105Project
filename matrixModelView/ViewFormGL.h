@@ -62,6 +62,8 @@ namespace Win
 
         // controls for model section
         Win::Button   buttonResetModel;
+        Win::Button   buttonClearDraw;
+
         Win::TextBox  textModelPosX;
         Win::TextBox  textModelPosY;
         Win::TextBox  textModelPosZ;

@@ -77,6 +77,9 @@ int ControllerFormGL::command(int id, int command, LPARAM msg)
             model->setBoxRotationOZ(false);
         }
         break;
+    case IDC_BUTTON_CLEAR_DRAW:
+        dr(id);
+        break;
 
     case IDC_BUTTON_ABOUT:
         if (command == BN_CLICKED)

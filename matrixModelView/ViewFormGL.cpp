@@ -157,6 +157,7 @@ void ViewFormGL::initControls(HWND handle)
     buttonAbout.setImage(::LoadIcon(0, IDI_INFORMATION));
 
     buttonResetView.set(handle, IDC_BUTTON_VIEW_RESET);
+    buttonClearDraw.set(handle, IDC_BUTTON_CLEAR_DRAW);
     textViewPosX.set(handle, IDC_LABEL_VIEW_PX);
     textViewPosY.set(handle, IDC_LABEL_VIEW_PY);
     textViewPosZ.set(handle, IDC_LABEL_VIEW_PZ);

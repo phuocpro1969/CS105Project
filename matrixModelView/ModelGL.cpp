@@ -582,50 +582,48 @@ void ModelGL::drawObject(int id_obj) {
     float size = getSizeObject();
 
     GLUquadricObj* quadratic_obj = gluNewQuadric();
-    GLuint boxDisplay_1, boxDisplay_2, boxDisplay_3, boxDisplay_4;
+    GLuint boxDisplay;
     
     // make Cube
-    boxDisplay_1 = glGenLists(1);
-    glNewList(boxDisplay_1, GL_COMPILE);
+    boxDisplay = glGenLists(4);
+    glNewList(boxDisplay + 0, GL_COMPILE);
     MakeCube(size);
     glEndList();
-    g_Cube = boxDisplay_1;
+    g_Cube = boxDisplay + 0;
 
     // make Sphere
-    boxDisplay_2 = glGenLists(1);
-    glNewList(boxDisplay_2, GL_COMPILE);
+    glNewList(boxDisplay + 1, GL_COMPILE);
     gluQuadricDrawStyle(quadratic_obj, GLU_FILL);
     gluQuadricTexture(quadratic_obj, GL_TRUE);
     gluQuadricNormals(quadratic_obj, GLU_SMOOTH);
     gluSphere(quadratic_obj, size, 32, 16);
     glEndList();
-    g_Sphere = boxDisplay_2;
+    g_Sphere = boxDisplay + 1;
 
     // make Clinder for fun
-    boxDisplay_3 = glGenLists(1);
-    glNewList(boxDisplay_3, GL_COMPILE);
+    glNewList(boxDisplay + 2, GL_COMPILE);
     gluQuadricDrawStyle(quadratic_obj, GLU_FILL);
     gluQuadricTexture(quadratic_obj, GL_TRUE);
     gluQuadricNormals(quadratic_obj, GLU_SMOOTH);
     gluCylinder(quadratic_obj, max(1, size/4), max(1, size/4), size, 32, 32);
     glEndList();
-    g_Cylinder = boxDisplay_3;
+    g_Cylinder = boxDisplay + 2;
     
     // make Cone
-    boxDisplay_4 = glGenLists(1);
-    glNewList(boxDisplay_4, GL_COMPILE);
+    glNewList(boxDisplay + 3, GL_COMPILE);
     gluQuadricDrawStyle(quadratic_obj, GLU_FILL);
     gluQuadricTexture(quadratic_obj, GL_TRUE);
     gluQuadricNormals(quadratic_obj, GLU_SMOOTH);
     gluCylinder(quadratic_obj, max(1, size / 4), 0, size, 32, 32);
     glEndList();
-    g_Cone = boxDisplay_4;
+    g_Cone = boxDisplay + 3;
 
     Cylinder cylinder(size, size, size*2, 36, 8);
     Cylinder cylinder_line(size, size, size*2, 36, 8, false);
     
     // draw object 
     DrawWithShape();
+    glPushMatrix();
     switch (id_obj) {
     case IDC_RADIO1: // teapot
         glutSolidTeapot(size);
@@ -649,6 +647,9 @@ void ModelGL::drawObject(int id_obj) {
         glCallList(g_Cone);
         break;
     }
+
+    glPopMatrix();
+    for (int i = 0; i < 4; i++) glDeleteLists(boxDisplay + i, 1);
     CloseDrawWithShape();
     CloseDrawWithFog();
 }
